@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>In Search of Meaning</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav id="nav">
+  <span class="nav-logo">In Search of Meaning</span>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#philosophers">Philosophers</a></li>
+    <li><a href="#reflect">Reflect</a></li>
+  </ul>
+</nav>
+
+<!-- SECTION 1: HERO / LANDING -->
+<section id="home">
+  <p class="intro-label">A Philosophy Final Project</p>
+  <h1 class="hero-title">
+    How do we live when the world offers <em>no clear answers?</em>
+  </h1>
+  <div class="hero-divider"></div>
+  <p class="hero-subtitle">Four Philosophers. One Question. An exploration of existentialism, absurdism, authenticity, and faith.  </p>
+  <div class="hero-cta">
+    <a href="#philosophers" class="btn-primary">Explore the philosophers</a>
+    <a href="#reflect" class="btn-ghost">Take the reflection quiz</a>
+  </div>
+</section>
+
+<!-- SECTION 2: PHILOSOPHERS -->
+<section id="philosophers">
+
+  <div class="phil-hero">
+    <p class="intro-label">The Philosophers</p>
+    <h2>Four thinkers. Four ways of living with the question.</h2>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showPhil(0, this)">01 — Sartre</button>
+    <button class="tab-btn" onclick="showPhil(1, this)">02 — Camus</button>
+    <button class="tab-btn" onclick="showPhil(2, this)">03 — Heidegger</button>
+    <button class="tab-btn" onclick="showPhil(3, this)">04 — Kierkegaard</button>
+  </div>
+
+  <div class="phil-panel active" id="panel-0">
+    <div class="panel-inner">
+
+      <div >
+        <div class="phil-name-block">
+          <p class="phil-number">01</p>
+          <h3 class="phil-name">Jean-Paul Sartre</h3>
+          <p class="phil-dates">1905 – 1980 · Paris, France</p>
+          <span class="phil-tag">Existentialism</span>
+        </div>
+        <p class="panel-intro">Sartre believed that humans are completely different from objects like a chair or a hammer.
+          A hammer is designed with a purpose before it is built, while humans are the opposite.
+          We are given birth first and then figure out who we are through the choices we make.
+          There is no blueprint for how we are supposed to live out our lives, we exist and everything after is up to us.</p>
+        <div class="meaning-block">
+          <p class="meaning-label">On meaning</p>
+          <p class="meaning-text">Meaning is not something you can find all of a sudden.
+            It is something one must build one step at a time.
+            You must find what matters to you and live by it without blaming others or fate when things get hard.</p>
+        </div>
+        <blockquote class="pull-quote">"Man is condemned to be free."</blockquote>
+        <p class="pull-cite">— Being and Nothingness, 1943</p>
+      </div>
+
+      <div >
+        <p class="ideas-label">Key Ideas</p>
+        <div class="idea-item">
+          <p class="idea-name">Existence precedes essence</p>
+          <p class="idea-desc">You were not born with a fixed personality or a predetermined purpose.
+            You come into the world as a blank slate and define yourself through what you do, not what you were born as.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Radical freedom</p>
+          <p class="idea-desc">No matter what situation you are in, you always have a choice.
+            Even choosing to do nothing is a choice. Sartre believed we are responsible for all of it, which is both empowering and uncomfortable.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Bad faith</p>
+          <p class="idea-desc">This is when you lie to yourself about your freedom.
+            It happens when you say things like "I had no choice" or "that is just who I am."
+            Sartre saw this as one of the most common ways people avoid taking responsibility for their lives.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Anguish</p>
+          <p class="idea-desc">Because your choices are genuinely yours and no one can make them for you, there is a natural feeling of weight that comes with that.
+            Sartre called this anguish. It is not a sign something is wrong. It is what real freedom feels like.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="phil-panel" id="panel-1">
+    <div class="panel-inner">
+
+      <div >
+        <div class="phil-name-block">
+          <p class="phil-number">02</p>
+          <h3 class="phil-name">Albert Camus</h3>
+          <p class="phil-dates">1913 – 1960 · Algeria / France</p>
+          <span class="phil-tag">Absurdism</span>
+        </div>
+        <p class="panel-intro">Camus stated that life does not come with a built in purpose, and the universe does not care about our problems.
+          We all want answers, but the world stays silent. Camus called this void between what we want and what we get the absurd.
+          His whole philosophy is about what to with that void.</p>
+        <div class="meaning-block">
+          <p class="meaning-label">On meaning</p>
+          <p class="meaning-text">We will never find meaning handed to us from somewhere outside ourselves.
+            But that does not mean we give up. Camus believed the right response is revolt, choosing to live fully and honestly even though the universe is not cooperating.</p>
+        </div>
+        <blockquote class="pull-quote">"One must imagine Sisyphus happy."</blockquote>
+        <p class="pull-cite">— The Myth of Sisyphus, 1942</p>
+      </div>
+
+      <div >
+        <p class="ideas-label">Key Ideas</p>
+        <div class="idea-item">
+          <p class="idea-name">The absurd</p>
+          <p class="idea-desc">The absurd is not just a feeling of meaninglessness.
+            It is the specific tension that comes from being a person who desperately wants life to make sense while living in a universe that will never explain itself.
+            You cannot make that tension go away, so you have to learn to live with it.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Revolt</p>
+          <p class="idea-desc">Revolt does not mean one must be angry or one must protest, but it means refusing to look away from how hard things are while also refusing to give up.
+            Revolt is the choice to keep on living, creating, and keep loving even when none of it is guaranteed to mean anything. </p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">The myth of Sisyphus</p>
+          <p class="idea-desc">In Greek mythology, Sisyphus was punished by the gods and forced to push a boulder up a mountain every day.
+            Once the rock reached the top, it would roll back down and would have to repeat the process every day.
+            Camus used this story to argue that we are all Sisyphus; the key is that we can still find something worth calling happiness even when things aren't going our way. </p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Solidarity</p>
+          <p class="idea-desc">When you really accept that everyone is in the same situation, suffering the same confusion and the same silence, it becomes much harder to be cruel.
+            Camus believed this shared condition is the foundation for treating each other well.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="phil-panel" id="panel-2">
+    <div class="panel-inner">
+
+      <div >
+        <div class="phil-name-block">
+          <p class="phil-number">03</p>
+          <h3 class="phil-name">Martin Heidegger</h3>
+          <p class="phil-dates">1889 – 1976 · Germany</p>
+          <span class="phil-tag">Phenomenology</span>
+        </div>
+        <p class="panel-intro">Heidegger asked a question: What does it actually mean to exist?
+          His answer to this question is that we find ourselves thrown into a world where we have no power to control our circumstances, while slowly crawling towards our own death.
+          The real question Heidegger asks is how   we should live our lives, either living honestly or just being a number in the population. </p>
+        <div class="meaning-block">
+          <p class="meaning-label">On meaning</p>
+          <p class="meaning-text">Meaning comes from actually owning your life. That means looking honestly at the fact that you will die,
+            resisting the force to just do what everyone else does, and making real choices about how you spend the time you have left.</p>
+        </div>
+        <blockquote class="pull-quote">"If I take death into my life, I will free myself."</blockquote>
+        <p class="pull-cite">— Being and Time, 1927</p>
+      </div>
+
+      <div >
+        <p class="ideas-label">Key Ideas</p>
+        <div class="idea-item">
+          <p class="idea-name">Dasein</p>
+          <p class="idea-desc">This is Heidegger's term for human existence. The word basically means being present in reality.
+            Unlike objects, humans are always aware of their own existence and are always in the middle of making sense of the world around them.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Das Man</p>
+          <p class="idea-desc">This is Heidegger's phrase for "the they" or "the one".
+            Basically, saying that we live on autopilot according to what everyone else does.
+            It is comfortable and easy, but Heidegger saw it as slowly handing your life away to someone else.
+            You aren't living, you are just going along.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Being toward death</p>
+          <p class="idea-desc">Heidegger believed that facing the fact that you are going to die, rather than pushing it out of your mind, actually helps you figure out what matters.
+            Death is not just something that happens at the end and pushing it off till later is not the right thing to do.
+            It is always in the background, and paying attention to it helps you avoid drifting through life.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Authenticity</p>
+          <p class="idea-desc">Being authentic does not just mean expressing yourself or being true to your feelings.
+            For Heidegger it means taking full ownership of your existence, making real choices with full awareness that your time is limited, instead of just drifting along doing what everyone else does.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="phil-panel" id="panel-3">
+    <div class="panel-inner">
+
+      <div >
+        <div class="phil-name-block">
+          <p class="phil-number">04</p>
+          <h3 class="phil-name">Søren Kierkegaard</h3>
+          <p class="phil-dates">1813 – 1855 · Copenhagen, Denmark</p>
+          <span class="phil-tag">Existential Faith</span>
+        </div>
+        <p class="panel-intro">Kierkegaard is often called the father of existentialism, and his big question was what does it really mean to be a person?
+          What he meant by be a person is not a category and not a role you were given, but a real person with real thoughts of their own, with
+          doubts and uncertainties about the world but still living through personal experiences. </p>
+        <div class="meaning-block">
+          <p class="meaning-label">On meaning</p>
+          <p class="meaning-text">At some point, thinking only gets you so far.
+            One can research and weight options and reason through decisions, but there are some things in life you can never be completely sure about.
+            No amount of thinking will give you a guarantee outcome, and at some point you have to take a leap of faith without knowing what might happen after.
+            This is what Kierkegaard calls the leap, it is not a blind guess but a choice to move forward without any certainties. If you keep waiting for some certainty, you will never really live at all.</p>
+        </div>
+        <blockquote class="pull-quote">"Whoever has learned to be anxious in the right way, has learned the ultimate."</blockquote>
+        <p class="pull-cite">— The Concept of Anxiety, 1844</p>
+      </div>
+
+      <div >
+        <p class="ideas-label">Key Ideas</p>
+        <div class="idea-item">
+          <p class="idea-name">The three stages of existence</p>
+          <p class="idea-desc">Kierkegaard says there are three ways people live their lives.
+            The first one is just chasing what feels good, such as new experiences, pleasure, and excitement.
+            The problem with this is that one never commits to anything or anyone; It feels free, but it is actually empty over time.
+            The second one is someone trying to live as a good person, such as taking on responsibilities and following the moral code, but that can only take you so far.
+            The third one is being religious, a relationship with God. The relationship goes beyond a rulebook or moral code; this is where life gets its deepest meaning.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">The leap of faith</p>
+          <p class="idea-desc">You can overthink and analyze a decision, but thinking will never make one fully ready.
+            At some point, you just have to go for it without knowing what might happen. This is not about just throwing reason out the door, but about being honest and knowing that some decisions cannot be made by thinking alone.</p>
+        </div>
+        <div class="idea-item">
+          <p class="idea-name">Despair</p>
+          <p class="idea-desc">Kierkegaard states that despair is not just about feeling sad, but about not being true to yourself.
+            Most people see despair as feeling down or feeling hopeless, but what Kierkegaard meant by despair is going
+            through the motions of life, such as conforming yourself to a role and going about life instead of stopping and wondering if this is the path you want to take.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- SECTION 3: REFLECTION QUIZ -->
+<section id="reflect">
+
+  <!-- INTRO SCREEN -->
+  <div class="quiz-screen active" id="screen-intro">
+    <p class="intro-label">Reflection</p>
+    <h2 class="quiz-intro-title">Questions you already carry.</h2>
+    <p class="quiz-intro-sub">
+      This quiz invites you to look at the questions you might already be living with and discover the philosophical ideas that align with them.
+      There are no right or wrong answers.
+    </p>
+    <button class="btn-primary" onclick="startQuiz()">Begin</button>
+  </div>
+
+  <!-- QUESTION SCREEN -->
+  <div class="quiz-screen" id="screen-question">
+    <p class="progress-label" id="prog-label">Question 1 of 5</p>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="prog-fill"></div>
+    </div>
+    <p class="intro-label" id="q-eyebrow">On choice</p>
+    <h2 class="q-text" id="q-text"></h2>
+    <div class="options" id="options-container"></div>
+    <button class="btn-next" id="btn-next" onclick="nextQuestion()" disabled>Continue</button>
+  </div>
+
+  <!-- RESULTS SCREEN -->
+  <div class="quiz-screen" id="screen-results">
+    <div class="results-header">
+      <p class="intro-label">Your Reflections</p>
+      <h2 class="results-title">Here's where your questions lead.</h2>
+      <p class="results-sub">
+        These thinkers didn't have all the answers either,
+        but they knew how to ask the hard questions in a way that actually cuts deep.
+      </p>
+    </div>
+    <div id="results-container"></div>
+    <button class="btn-ghost" onclick="restartQuiz()">Start over</button>
+  </div>
+
+</section>
+
+
+<script src="src/js/main.js"></script>
+
+</body>
+
+</html>
